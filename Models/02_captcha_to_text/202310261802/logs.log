@@ -1,0 +1,16 @@
+2023-10-26 18:03:27,227 - tensorflow - WARNING - Callback method `on_train_batch_end` is slow compared to the batch time (batch time: 0.6400s vs `on_train_batch_end` time: 0.6577s). Check your callbacks.
+2023-10-26 18:03:35,989 - root - INFO - Epoch 0; loss: 26.528762817382812; CER: 1.3840707540512085; WER: 1.0; val_loss: 17.043781280517578; val_CER: 1.0; val_WER: 1.0
+2023-10-26 18:03:44,665 - root - INFO - Epoch 1; loss: 14.093255043029785; CER: 1.0; WER: 1.0; val_loss: 13.556771278381348; val_CER: 1.0; val_WER: 1.0
+2023-10-26 18:03:53,028 - root - INFO - Epoch 2; loss: 13.367742538452148; CER: 1.0; WER: 1.0; val_loss: 14.45858097076416; val_CER: 1.0; val_WER: 1.0
+2023-10-26 18:03:54,816 - tf2onnx.tf_loader - WARNING - Could not search for non-variable resources. Concrete function internal representation may have changed.
+2023-10-26 18:03:58,548 - tf2onnx.tfonnx - INFO - Using tensorflow=2.14.0, onnx=1.14.1, tf2onnx=1.15.1/37820d
+2023-10-26 18:03:58,548 - tf2onnx.tfonnx - INFO - Using opset <onnx, 15>
+2023-10-26 18:03:58,843 - tf2onnx.tf_utils - INFO - Computed 0 values for constant folding
+2023-10-26 18:03:58,849 - tf2onnx.tf_utils - INFO - Computed 0 values for constant folding
+2023-10-26 18:03:58,856 - tf2onnx.tf_utils - INFO - Computed 0 values for constant folding
+2023-10-26 18:03:58,873 - tf2onnx.tf_utils - INFO - Computed 0 values for constant folding
+2023-10-26 18:03:58,963 - tf2onnx.tf_utils - INFO - Computed 2 values for constant folding
+2023-10-26 18:03:59,174 - tf2onnx.tfonnx - INFO - folding node using tf type=StridedSlice, name=model/bidirectional/forward_lstm/PartitionedCall/strided_slice
+2023-10-26 18:03:59,175 - tf2onnx.tfonnx - INFO - folding node using tf type=StridedSlice, name=model/bidirectional/backward_lstm/PartitionedCall/strided_slice
+2023-10-26 18:03:59,455 - tf2onnx.optimizer - INFO - Optimizing ONNX model
+2023-10-26 18:04:01,001 - tf2onnx.optimizer - INFO - After optimization: BatchNormalization -18 (18->0), Cast -4 (11->7), Concat -4 (10->6), Const -128 (194->66), Expand -3 (4->1), Gather +2 (2->4), Identity -2 (2->0), Shape -1 (4->3), Slice -1 (5->4), Squeeze -3 (5->2), Transpose -83 (87->4), Unsqueeze -14 (17->3)

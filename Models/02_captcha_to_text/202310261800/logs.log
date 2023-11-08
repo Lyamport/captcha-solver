@@ -1,0 +1,15 @@
+2023-10-26 18:01:06,804 - root - INFO - Epoch 0; loss: 69.24356079101562; CER: 2.8584070205688477; WER: 1.0; val_loss: 18.263460159301758; val_CER: 1.0; val_WER: 1.0
+2023-10-26 18:01:16,510 - root - INFO - Epoch 1; loss: 19.64202117919922; CER: 1.0; WER: 1.0; val_loss: 15.697847366333008; val_CER: 1.0; val_WER: 1.0
+2023-10-26 18:01:26,070 - root - INFO - Epoch 2; loss: 13.760275840759277; CER: 1.0; WER: 1.0; val_loss: 13.309124946594238; val_CER: 1.0; val_WER: 1.0
+2023-10-26 18:01:27,645 - tf2onnx.tf_loader - WARNING - Could not search for non-variable resources. Concrete function internal representation may have changed.
+2023-10-26 18:01:30,382 - tf2onnx.tfonnx - INFO - Using tensorflow=2.14.0, onnx=1.14.1, tf2onnx=1.15.1/37820d
+2023-10-26 18:01:30,382 - tf2onnx.tfonnx - INFO - Using opset <onnx, 15>
+2023-10-26 18:01:31,163 - tf2onnx.tf_utils - INFO - Computed 0 values for constant folding
+2023-10-26 18:01:31,178 - tf2onnx.tf_utils - INFO - Computed 0 values for constant folding
+2023-10-26 18:01:31,186 - tf2onnx.tf_utils - INFO - Computed 0 values for constant folding
+2023-10-26 18:01:31,201 - tf2onnx.tf_utils - INFO - Computed 0 values for constant folding
+2023-10-26 18:01:31,278 - tf2onnx.tf_utils - INFO - Computed 2 values for constant folding
+2023-10-26 18:01:31,460 - tf2onnx.tfonnx - INFO - folding node using tf type=StridedSlice, name=model/bidirectional/forward_lstm/PartitionedCall/strided_slice
+2023-10-26 18:01:31,461 - tf2onnx.tfonnx - INFO - folding node using tf type=StridedSlice, name=model/bidirectional/backward_lstm/PartitionedCall/strided_slice
+2023-10-26 18:01:31,696 - tf2onnx.optimizer - INFO - Optimizing ONNX model
+2023-10-26 18:01:32,451 - tf2onnx.optimizer - INFO - After optimization: BatchNormalization -14 (14->0), Cast -4 (11->7), Concat -4 (10->6), Const -112 (166->54), Expand -3 (4->1), Gather +2 (2->4), Identity -2 (2->0), Shape -1 (4->3), Slice -1 (5->4), Squeeze -3 (5->2), Transpose -63 (67->4), Unsqueeze -14 (17->3)
